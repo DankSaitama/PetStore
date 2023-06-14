@@ -1,0 +1,10 @@
+<h1>Search Results</h1>
+<p>Your search query: {{query}}</p>
+
+<ul>
+    {% for p in pets %}
+    <li> {{p.title}} - {{p.age}} - {{p.desc}} </li>
+    {% empty %}
+    <li>No pets found </li>
+    {% endfor %}
+</ul>
